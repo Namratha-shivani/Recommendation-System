@@ -26,14 +26,18 @@ The data is split into test and train sets with an 80:20 ratio, the system compu
 The gene expression data is log-transformed, and the top 1000 genes are selected and stored in a matrix form (dual mode matrix). A single gene network is constructed by cross-multiplication of the gene expression matrix with itself. A similarity matrix [8] is constructed and used to generate the gene of interest by matrix multiplication of the similarity matrix with the gene expression matrix. The gene of interest is then sorted to get the gene ranking. [9]
 
 <p align="centre">
-  _Gene single network(G): G = Ge * Ge_
-  _Gene similarity matrix (Ja): Jaij = gij/(gii+gjj-gij)_
+  _Gene single network(G): G = Ge * Ge_ 
+  
+  _Gene similarity matrix (Ja): Jaij = gij/(gii+gjj-gij)_ 
+  
   _Gene interest (Gi): Gi = Ja * Ge_
+  
   _Gene Rank (GR): GR = sort (Gi)_
 </p>
 
 
-**_Logistic Regression Model:_**
+**_Logistic Regression Model:_** 
+
 A logistic regression model has been employed from scratch to predict the patient diagnosis from the gene expression data and covariates like age, stage of tumor and sex. Data preprocessing was performed to convert the categorical variables like stage of tumor, sex, and diagnosis into numerical indices.
 
 

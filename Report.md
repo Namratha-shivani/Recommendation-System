@@ -42,7 +42,7 @@ A logistic regression model has been employed from scratch to predict the patien
 **Model:**  
 
 <p align='center'>
-  <img src="LOGREG-MODEL.png" width="400" height="300" alt="Alt Text">
+  <img src="LOGREG-MODEL.png" width="600" height="400" alt="Alt Text">
 </p>
 
 The Python sklearn package [10] was utilized to split the data into training and test sets, with 80% allocated to the training data and 20% to the test data. Initially, a random weight vector was generated using the np.random function [11], and this vector was employed to make the initial predictions prior to optimization.

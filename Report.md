@@ -39,7 +39,7 @@ A logistic regression model has been employed from scratch to predict the patien
 
 
 
-## Model:  
+**Model:**  
  
 
 The Python sklearn package [10] was utilized to split the data into training and test sets, with 80% allocated to the training data and 20% to the test data. Initially, a random weight vector was generated using the np.random function [11], and this vector was employed to make the initial predictions prior to optimization.
@@ -47,6 +47,10 @@ The Python sklearn package [10] was utilized to split the data into training and
 The data was linearly fitted by multiplying the weight vector with the x data and then transformed using the sigmoid activation function. Predictions were made based on whether the transformed data exceeded a threshold of 0.5 or not.
 
 The weight vector was optimized to minimize the loss of predictions, utilizing a regularization rate of 0.0001 and learning rate of 0.01 over 100 epochs of iterations. Subsequently, data predictions were conducted again to evaluate how the optimization affected the accuracy of predictions.
+
+<p align='center'>
+  
+</p>
 
 ## EXPERIMENTAL RESULTS:
 

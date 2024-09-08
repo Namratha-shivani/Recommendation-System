@@ -69,7 +69,7 @@ This study focuses on integrating Recommendation Systems (RS) and logistic regre
 
 The pressing concern of colorectal cancer's impact is highlighted, emphasizing its global prevalence and the need for early detection strategies. The RS algorithm, using RNA-seq data from the TCGA-COAD project, computes top gene recommendations. These genes are vital in understanding and addressing colorectal cancer at a molecular level.
 
-The gene interest calculation method involves log transformation, gene network construction, and similarity matrix generation. This process yields a ranked list of genes, providing a foundation for the subsequent logistic regression model. The logistic regression model, initially hindered by misclassifications, is successfully optimized with regularization, and learning rate adjustments, achieving a remarkable 100% accuracy in predicting patient diagnoses.
+The gene interest calculation method involves log transformation, gene network construction, and similarity matrix generation. This process yields a ranked list of genes, providing a foundation for the subsequent logistic regression model. The logistic regression model, initially hindered by misclassifications, is successfully optimized with regularization, and learning rate adjustments, achieving a remarkable f1-score of 0.97 in predicting patient diagnoses.
 
 ## Conclusion:
 
